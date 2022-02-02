@@ -1,0 +1,10 @@
+---
+layout: paint
+eleventyComputed:
+    title: "Connaitre les statistiques de diffusions sur {{ paint.title }})"
+pagination:
+    data: paints
+    size: 1
+    alias: paint
+permalink: "paint/{{ paint.title | slug }}/"
+---

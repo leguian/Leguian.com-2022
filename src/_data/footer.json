@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Accueil",
+    "url": "/"
+  },
+  {
+    "label": "Compétences",
+    "url": "/competences/"
+  },
+  {
+    "label": "Contact & Horaires",
+    "url": "/contact/"
+  },
+  {
+    "label": "Prendre RDV",
+    "url": "/rdv/"
+  },
+  {
+    "label": "Mentions légales",
+    "url": "/legal/"
+  }
+]

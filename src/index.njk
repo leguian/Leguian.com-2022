@@ -1,0 +1,17 @@
+---
+layout: homepage
+---
+<div class="bg-white flex bg-bottom">
+    <div class="max-w-2xl mx-auto p-6 lg:py-32 xl:px-0">
+        <h1 class="h2 text-xl md:text-3xl mb-4 font-bold">Bienvenue !</h1>
+        <p>Amateurs de lignes, paysages urbains et culture graffiti, vous devriez être touché par ces toiles. Bonne visite !</p>
+    </div>
+</div>
+<div class="max-w-2xl mx-auto p-6 lg:pb-32 xl:px-0 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 object-center transition-none">
+    {% for item in paints %}
+        <a href="paint/{{ item.title | slug }}" class="mix w-full bg-white shadow-xl flex flex-col justify-center items-center hover:scale-110 {{ item.title | slug }}">
+            <div class="min-w-[2rem]">{% image "src/assets/img/paints/"+item.title+".jpg", "Statistique de mes oeuvre sur "+item.title %}</div>
+            <h2 class="text-sm m-0 p-3 uppercase">{{ item.title | slug }}</h2>
+        </a>
+    {% endfor %}
+</div>

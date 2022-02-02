@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<header class="blog-hero py-12 md:py-12 relative z-20" {% if thumb %}style="background-image: url('{{ thumb | url }}')"{% endif %}>
+    <div class="z-10 max-w-4xl mx-auto px-6">
+        <div class="p-3 mx-auto sm:p-6 bg-white rounded shadow-xl w-64 mb-6 max-w-[100%]">{% image "src/assets/img/paints/"+paint.title+".jpg", "Statistique de mes oeuvre sur "+paint.title %}</div>
+        <h1 class="text-center text-xl md:text-2xl font-bold leading-tight text-white mt-0 mb-3">Connaitre mes statistiques de diffusions sur <span class="uppercase">{{ sources.channel }}</span></h1>
+    </div>
+</header>
+<div id="post-content" class="prose">
+    <p>Vous souhaitez savoir si vos morceaux sont diffusés sur <strong class="uppercase">{{ sources.channel }}</strong>&nbsp;? Vous avez un doute suite à la réception de votre feuillet de répartition SACEM, notamment sur les statistiques de diffusion sur <strong class="uppercase">{{ sources.channel }}</strong> ?</p>
+    <p>Vous n'avez pas reçu le paiement pour la diffusion de vos musiques sur {{ sources.channel }} ?</p>
+    <h2 class="h5 !mt-0">Je n'ai pas été payé suite à la diffusion de mon morceau de musique sur <em>{{ sources.channel }}</em></h2>
+    <p>Pour le savoir, inscrivez-vous sur <span data-tippy-content="Bientôt disponible"><a href="https://app.rightsnow.fr/register" class="disabled">RightsNow!</a></span></p>
+    <ul class="list-disc ml-6">
+        <li>Uploadez vos fichiers</li>
+        <li>Connaitre la diffusion de votre musique sur <strong class="uppercase">{{ sources.channel }}</strong></li>
+        <li>Obtenez un récapitulatif journalier</li>
+        <li>Vos œuvres sont surveillées sur +60 médias</li>
+        <li>Affichez l'historique complet des diffusions de vos titres sur le canal <strong class="uppercase">{{ sources.channel }}</strong></li>
+        <li>Recevez des alertes de diffusion</li>
+        <li>Vérifier les droits SACEM des diffusions sur <strong class="uppercase">{{ sources.channel }}</strong></li>
+        <li>Estimez le montant de vos droits d'auteur</li>
+        <li>...et bien d'autres fonctionnalités à venir</li>
+    </ul>
+
+    <span data-tippy-content="Bientôt disponible"><a href="https://app.rightsnow.fr/register" class="disabled button w-full md:w-auto">Je m'inscris sur     RightsNow!</a></span>
+
+    <div class="mt-6 pt-10 border-t border-gray-300">
+        <a href="/monitoring/" class="button outline border-primary text-primary hover:text-primary">Revenir à la liste des canaux monitorées</a>
+    </div>
+</div>

@@ -1,0 +1,234 @@
+[
+  {
+    "year": "2002",
+    "title": "ST01",
+    "size": "NC",
+    "price": "NC",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2002",
+    "title": "ST02",
+    "size": "NC",
+    "price": "NC",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2002",
+    "title": "ST03",
+    "size": "NC",
+    "price": "NC",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2002",
+    "title": "ST04",
+    "size": "100x50",
+    "price": "750",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2002",
+    "title": "ST05",
+    "size": "73x60",
+    "price": "750",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2008",
+    "title": "ST06A06B",
+    "size": "100x50 & 50x50",
+    "price": "1000",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2002",
+    "title": "ST07",
+    "size": "81x100",
+    "price": "1100",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2003",
+    "title": "ST08",
+    "size": "89x116",
+    "price": "1200",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2002",
+    "title": "ST09",
+    "size": "50x50",
+    "price": "350",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2003",
+    "title": "ST10",
+    "size": "50x50",
+    "price": "350",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2005",
+    "title": "ST14",
+    "size": "100x100",
+    "price": "800",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2006",
+    "title": "ST17",
+    "size": "NC",
+    "price": "NC",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2006",
+    "title": "ST25",
+    "size": "130x100",
+    "price": "1800",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2006",
+    "title": "ST26",
+    "size": "30x30",
+    "price": "270",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2006",
+    "title": "ST27",
+    "size": "30x30",
+    "price": "270",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2006",
+    "title": "ST28",
+    "size": "60x60",
+    "price": "550",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2006",
+    "title": "ST29",
+    "size": "60x60",
+    "price": "550",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2006",
+    "title": "ST30",
+    "size": "60x60",
+    "price": "550",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2006",
+    "title": "ST31",
+    "size": "100x50",
+    "price": "750",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2006",
+    "title": "ST32",
+    "size": "100x50",
+    "price": "750",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2008",
+    "title": "ST34",
+    "size": "92x75",
+    "price": "850",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2006",
+    "title": "ST35",
+    "size": "24x19",
+    "price": "250",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2006",
+    "title": "ST36",
+    "size": "24x19",
+    "price": "250",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2006",
+    "title": "ST37",
+    "size": "24x19",
+    "price": "250",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "1998",
+    "title": "HS01",
+    "size": "89x146",
+    "price": "2000",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "1998",
+    "title": "HS02",
+    "size": "50x40",
+    "price": "250",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2004",
+    "title": "PP",
+    "size": "65x54",
+    "price": "NC",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2004",
+    "title": "PRA",
+    "size": "40x40",
+    "price": "NC",
+    "online": "TRUE",
+    "availability": "FALSE"
+  },
+  {
+    "year": "2004",
+    "title": "PRB",
+    "size": "40x40",
+    "price": "NC",
+    "online": "TRUE",
+    "availability": "FALSE"
+  }
+]

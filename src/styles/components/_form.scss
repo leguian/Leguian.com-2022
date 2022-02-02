@@ -1,0 +1,61 @@
+@layer components {
+  input,
+  textarea {
+    @apply
+    border
+    shadow-inner
+    border-gray-300
+    appearance-none
+    w-full
+    p-3
+    mb-4
+    rounded-md
+    duration-200
+    transition-all
+    focus:border-primary
+    focus:outline-none
+    focus:ring-4
+    focus:ring-primary-200
+    focus:ring-opacity-80
+    ;
+
+    .error & {
+      @apply
+      ring-red-200
+      border-red
+      ;
+    }
+  }
+
+  label {
+    @apply
+    block
+    relative
+    mb-2
+    font-bold
+    text-gray-700
+    ;
+  }
+}
+
+.required > label:after {
+  content: "*";
+  @apply
+  absolute
+  text-red
+  ml-0.5
+  -mt-0.5
+  text-lg
+  top-0
+  ;
+}
+
+.hint {
+  @apply
+  inline-block
+  text-xs
+  cursor-pointer
+  italic
+  mb-6
+  ;
+}

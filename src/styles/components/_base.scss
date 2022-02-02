@@ -1,0 +1,228 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.fa-secondary {
+  opacity: .4
+}
+
+@layer components {
+  html {
+    font-size: 20px;
+  }
+
+  body,
+  html {
+    @apply
+    antialiased
+    font-sans
+    bg-white
+    font-light
+    text-gray-800
+    ;
+  }
+
+  .doc-section {
+    @apply container w-1/2 mx-auto bg-white p-10 my-5 shadow;
+  }
+
+  a {
+    @apply
+    text-primary-700
+    relative
+    no-underline
+    hover:text-primary-900
+    transition
+    duration-200
+    ;
+  }
+
+  p {
+    &:not(:last-child) {
+      @apply
+      pb-6
+      ;
+    }
+  }
+
+  svg {
+    @apply fill-current;
+
+    &.logo {
+      @apply
+      text-gray-700
+      fill-current
+      ;
+    }
+  }
+
+  .disabled,
+  *:disabled {
+    @apply
+    opacity-30
+    pointer-events-none
+    select-none
+    cursor-not-allowed
+    ;
+  }
+
+  .error {
+    &.explanation {
+      @apply
+      -mt-3
+      mb-4
+      text-red
+      text-sm
+      ;
+    }
+  }
+
+  .homepage-hero {
+    //background-image: url('../img/home-bg-senechal-corinne.webp');
+  }
+
+  .blog-hero {
+    &:before {
+      z-index: -5;
+      content: "";
+      @apply
+      block
+      absolute
+      left-0
+      top-0
+      w-full
+      h-full
+      opacity-90
+      bg-gray-900
+      ;
+    }
+  }
+
+  blockquote {
+    @apply
+    bg-primary-50
+    text-black
+    p-8
+    rounded
+    my-6
+    border-l-4
+    border-primary
+    ;
+  }
+
+  #post-content {
+
+    hr {
+      @apply border-gray-100;
+    }
+
+    picture {
+      @apply overflow-hidden rounded block;
+    }
+
+    > p:not(:last-child) {
+      @apply mb-2;
+    }
+
+    ul {
+      @apply list-disc ml-6 mb-6;
+      li {
+        @apply mb-3;
+      }
+    }
+
+    h2, .h2 {
+      &:first-child {
+        @apply text-4xl;
+      }
+      &:not(:first-child) {
+        @apply text-3xl mb-6;
+      }
+
+      @apply mt-12;
+    }
+
+    h3, .h3 {
+      @apply text-2xl mb-6;
+      &:not(:first-child) {
+        @apply mt-12;
+      }
+    }
+
+    h4, .h4 {
+      &:not(:first-child) {
+        @apply text-xl mb-6;
+      }
+
+      @apply mt-12;
+    }
+
+    h5, .h5 {
+      &:not(:first-child) {
+        @apply text-lg mb-6;
+      }
+
+      @apply mt-12;
+    }
+
+    h6, .h6 {
+      &:not(:first-child) {
+        @apply text-base mb-6;
+      }
+
+      @apply mt-12;
+    }
+  }
+
+  @responsive {
+    .text-shadow {
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.40);
+    }
+
+    .text-shadow-none {
+      text-shadow: none;
+    }
+  }
+
+}
+
+.footer-menu {
+  > * {
+    &:not(:first-child):before {
+      content: "";
+      @apply
+      w-1.5
+      h-1.5
+      bg-white
+      opacity-30
+      rounded-3xl
+      mx-2
+      hidden
+      md:inline-flex
+      ;
+    }
+  }
+}
+
+.item-left {
+  @apply
+  mt-6
+  md:mt-0
+  ;
+  margin-left: auto !important;
+}
+
+.medium-zoom--opened .medium-zoom-overlay {
+  @apply z-50;
+}
+
+.medium-zoom--opened .medium-zoom-image--opened {
+  @apply z-50 rounded-none p-2 shadow-none hover:shadow-none hover:scale-0;
+}
+
+.jumptarget::before {
+  content: "";
+  display: block;
+  height: 50px; /* fixed header height*/
+  margin: -50px 0 0; /* negative fixed header height */
+}

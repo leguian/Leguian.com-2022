@@ -1,0 +1,11 @@
+---
+permalink: "/index.json"
+---
+[
+    {% for specialites in collections.specialitess %}
+    {
+        "url": "{{ specialites.url | url }}",
+        "title": "{{ specialites.data.title }}",
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+]
