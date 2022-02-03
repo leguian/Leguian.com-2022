@@ -19,12 +19,6 @@
     focus:ring-opacity-80
     ;
 
-    .error & {
-      @apply
-      ring-red-200
-      border-red
-      ;
-    }
   }
 
   label {
@@ -36,18 +30,6 @@
     text-gray-700
     ;
   }
-}
-
-.required > label:after {
-  content: "*";
-  @apply
-  absolute
-  text-red
-  ml-0.5
-  -mt-0.5
-  text-lg
-  top-0
-  ;
 }
 
 .hint {

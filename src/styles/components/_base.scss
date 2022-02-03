@@ -16,22 +16,15 @@ html {
     @apply
     antialiased
     font-sans
-    bg-white
-    font-light
-    text-gray-800
     ;
-  }
-
-  .doc-section {
-    @apply container w-1/2 mx-auto bg-white p-10 my-5 shadow;
   }
 
   a {
     @apply
-    text-primary-700
+    text-yellow-400
     relative
     no-underline
-    hover:text-primary-900
+    hover:text-yellow-100
     transition
     duration-200
     ;
@@ -64,17 +57,6 @@ html {
     select-none
     cursor-not-allowed
     ;
-  }
-
-  .error {
-    &.explanation {
-      @apply
-      -mt-3
-      mb-4
-      text-red
-      text-sm
-      ;
-    }
   }
 
   .homepage-hero {

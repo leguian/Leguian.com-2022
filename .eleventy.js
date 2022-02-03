@@ -23,7 +23,6 @@ module.exports = (config) => {
 
     config.addPassthroughCopy('src/assets/img/**/*');
     config.addPassthroughCopy('src/assets/fonts/**/*');
-    config.addPassthroughCopy({'src/specialites/img/**/*': 'assets/img/'});
 
     config.addWatchTarget("src/assets/img/");
     config.addWatchTarget("src/assets/js/");
@@ -38,9 +37,6 @@ module.exports = (config) => {
 
     // minify html output
     config.addTransform('minifyHtml', require('./lib/transforms/minifyHtml'));
-
-    // Collections
-    config.addCollection('specialites', require('./lib/collections/specialites'));
 
     /* Image shortcode for templating */
     config.addNunjucksAsyncShortcode("image", imageShortcode);

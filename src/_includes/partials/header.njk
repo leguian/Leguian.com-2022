@@ -1,18 +1,7 @@
-<header id="header" class="py-5 z-50 sticky w-full top-0 transition-all transform ease-in-out duration-500 bg-white bg-opacity-70 backdrop-filter backdrop-blur-xl backdrop-saturate-200 shadow-xl">
-    <div class="px-6 xl:px-0 max-w-2xl mx-auto flex items-center flex-wrap justify-between">
-        <div class="sm:mr-8">
-            <a class="flex items-center" title="{{ site.title }}" href="{{ '/' | url }}">
-                <span class="lg:hidden">{% include "icons/logo-corinne-senechal-icon.svg" %}</span>
-                <span class="hidden lg:inline-block">{% include "icons/logo-corinne-senechal.svg" %}</span>
-            </a>
-        </div>
-        <nav id="menu" class="order-last md:order-none items-center justify-end flex-grow w-full md:space-x-2 mt-6 md:w-auto md:flex hidden md:mt-0">
-            {% for item in menu %}
-                <a href="{{ item.url | url }}" class="flex justify-center px-6 py-3 hover:bg-primary-100 rounded md:inline-block md:mt-0{% if item.url == page.url %} text-gray-900 bg-gray-50 font-bold{% endif %}{% if item.class %} {{ item.class }}{% endif %}">{{ item.label }}</a>
-            {% endfor %}
-        </nav>
-        <div id="menu-toggle" class="flex items-center md:hidden cursor-pointer px-6 py-5 -my-5 -mx-6 sm:ml-6">
-            {% include "icons/menu.svg" %}
-        </div>
+<header id="header" class="py-5 z-50 sticky w-full top-0 transition-all transform ease-in-out duration-500 bg-primary-800 bg-opacity-70 backdrop-filter backdrop-blur-xl backdrop-saturate-200 shadow-xl">
+    <div class="px-6 xl:px-0 max-w-2xl mx-auto flex items-center flex-wrap justify-center">
+        <a title="{{ site.title }}" href="{{ '/' | url }}">
+            {% include "icons/logo.svg" %}
+        </a>
     </div>
 </header>
