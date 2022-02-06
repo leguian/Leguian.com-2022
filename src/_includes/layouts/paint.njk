@@ -1,9 +1,26 @@
 ---
 layout: default
 ---
-<header class="relative">
-    <div class="max-w-4xl mx-auto px-6">
-        <div class="mx-auto mb-6 max-w-[100%]">{% image "src/assets/img/paints/"+paint.title+".jpg", "Statistique de mes oeuvre sur "+paint.title %}</div>
-        <h1 class="text-center text-xl md:text-2xl font-bold leading-tight text-white mt-0 mb-3">{{ paint.title }}</h1>
+
+<h1 class="text-4xl mb-6 text-center text-white">Titre : {{ paint.title }}</h1>
+<a href="{{ "../../assets/img/paints/"+paint.title+".jpg" | url }}" class="mx-auto block rounded overflow-hidden mb-6 max-w-[100%]">{% image "src/assets/img/paints/"+paint.title+".jpg", "Statistique de mes oeuvre sur "+paint.title %}</a>
+<div class="sm:flex space-y-6 sm:space-y-0 gap-4 justify-between text-left">
+    <div>
+        <div class="opacity-60">Année de production</div>
+        <strong>{{ paint.year }}</strong>
     </div>
-</header>
+    <div>
+        <div class="opacity-60">H × L (cm)</div>
+        <strong>{{ paint.size }}</strong></div>
+    <div>
+        <div class="opacity-60">Prix (€)</div>
+        <strong>{{ paint.price }}</strong></div>
+    <div>
+        <div class="opacity-60">Disponible à la vente ?</div>
+        {% if paint.availability == "TRUE" %}
+            <strong>Oui</strong>
+        {% else %}
+            <strong class="text-[#ff6a86]">Non</strong>
+        {% endif %}
+        </div>
+</div>

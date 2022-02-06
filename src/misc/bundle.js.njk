@@ -2,9 +2,6 @@
 permalink: "/assets/js/bundle.js"
 ---
 {% set js %}
-{% include "../assets/js/tippy/popper.min.js" %}
-{% include "../assets/js/tippy/tippy-bundle.umd.min.js" %}
-{% include "../assets/js/zoomImage/zoomImage.min.js" %}
 {% include "../assets/js/main.js" %}
 {% endset %}
 {{ js | minifyJs | safe }}

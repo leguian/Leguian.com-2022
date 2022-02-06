@@ -13,7 +13,7 @@ module.exports = {
         },
         extend: {
             borderRadius: {
-                DEFAULT: '0.5rem'
+                DEFAULT: '0.2rem'
             },
             colors: {
                 'background': {

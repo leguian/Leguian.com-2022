@@ -658,36 +658,6 @@ h2, .h2{
 		line-height: 1;
 	}
 }
-h3, .h3{
-	font-size: 1.875rem;
-	line-height: 2.25rem;
-}
-@media (min-width: 768px){
-	h3, .h3{
-		font-size: 2.25rem;
-		line-height: 2.5rem;
-	}
-}
-h4, .h4{
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
-@media (min-width: 768px){
-	h4, .h4{
-		font-size: 1.875rem;
-		line-height: 2.25rem;
-	}
-}
-h5, .h5{
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-}
-@media (min-width: 768px){
-	h5, .h5{
-		font-size: 1.5rem;
-		line-height: 2rem;
-	}
-}
 hr{
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
@@ -731,48 +701,10 @@ svg.logo{
 	--tw-text-opacity: 1;
 	color: rgba(77, 77, 77, var(--tw-text-opacity));
 }
-.disabled, *:disabled{
-	pointer-events: none;
-	cursor: not-allowed;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	opacity: 0.3;
-}
-.blog-hero:before {
-      z-index: -5;
-      content: "";
-    }
-.blog-hero:before{
-	position: absolute;
-}
-.blog-hero:before{
-	left: 0px;
-}
-.blog-hero:before{
-	top: 0px;
-}
-.blog-hero:before{
-	display: block;
-}
-.blog-hero:before{
-	height: 100%;
-}
-.blog-hero:before{
-	width: 100%;
-}
-.blog-hero:before{
-	--tw-bg-opacity: 1;
-	background-color: rgba(29, 29, 29, var(--tw-bg-opacity));
-}
-.blog-hero:before{
-	opacity: 0.9;
-}
 blockquote{
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
-	border-radius: 0.5rem;
+	border-radius: 0.2rem;
 	border-left-width: 4px;
 	--tw-border-opacity: 1;
 	border-color: rgba(29, 29, 29, var(--tw-border-opacity));
@@ -793,7 +725,7 @@ blockquote{
 	overflow: hidden;
 }
 #post-content picture{
-	border-radius: 0.5rem;
+	border-radius: 0.2rem;
 }
 #post-content > p:not(:last-child){
 	margin-bottom: 0.5rem;
@@ -864,21 +796,12 @@ blockquote{
 #post-content h6, #post-content .h6{
 	margin-top: 3rem;
 }
-.relative{
-	position: relative;
-}
 .sticky{
 	position: -webkit-sticky;
 	position: sticky;
 }
 .top-0{
 	top: 0px;
-}
-.z-20{
-	z-index: 20;
-}
-.z-10{
-	z-index: 10;
 }
 .z-50{
 	z-index: 50;
@@ -889,14 +812,6 @@ blockquote{
 .mx-auto{
 	margin-left: auto;
 	margin-right: auto;
-}
-.my-12{
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-}
-.mx-6{
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
 }
 .mt-5{
 	margin-top: 1.25rem;
@@ -916,20 +831,11 @@ blockquote{
 .mb-4{
 	margin-bottom: 1rem;
 }
-.mb-6{
-	margin-bottom: 1.5rem;
-}
 .mt-6{
 	margin-top: 1.5rem;
 }
-.\!mt-0{
-	margin-top: 0px !important;
-}
-.ml-6{
-	margin-left: 1.5rem;
-}
-.mb-12{
-	margin-bottom: 3rem;
+.mb-6{
+	margin-bottom: 1.5rem;
 }
 .mt-12{
 	margin-top: 3rem;
@@ -943,38 +849,17 @@ blockquote{
 .grid{
 	display: grid;
 }
-.h-5{
-	height: 1.25rem;
-}
 .w-full{
 	width: 100%;
-}
-.w-5{
-	width: 1.25rem;
-}
-.w-6{
-	width: 1.5rem;
 }
 .w-32{
 	width: 8rem;
 }
-.w-64{
-	width: 16rem;
-}
-.min-w-\[2rem\]{
-	min-width: 2rem;
-}
 .max-w-2xl{
 	max-width: 42rem;
 }
-.max-w-4xl{
-	max-width: 56rem;
-}
 .max-w-\[100\%\]{
 	max-width: 100%;
-}
-.flex-grow{
-	flex-grow: 1;
 }
 .transform{
 	transform: var(--tw-transform);
@@ -984,9 +869,6 @@ blockquote{
 }
 .cursor-default{
 	cursor: default;
-}
-.list-disc{
-	list-style-type: disc;
 }
 .grid-cols-2{
 	grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1009,6 +891,11 @@ blockquote{
 .gap-4{
 	gap: 1rem;
 }
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+	--tw-space-y-reverse: 0;
+	margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
 .overflow-hidden{
 	overflow: hidden;
 }
@@ -1016,37 +903,26 @@ blockquote{
 	overflow-wrap: break-word;
 }
 .rounded{
-	border-radius: 0.5rem;
+	border-radius: 0.2rem;
 }
 .rounded-tl{
-	border-top-left-radius: 0.5rem;
+	border-top-left-radius: 0.2rem;
 }
 .rounded-bl{
-	border-bottom-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.2rem;
 }
 .rounded-tr{
-	border-top-right-radius: 0.5rem;
+	border-top-right-radius: 0.2rem;
 }
 .rounded-br{
-	border-bottom-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.2rem;
 }
 .border{
 	border-width: 1px;
 }
-.border-t{
-	border-top-width: 1px;
-}
-.border-gray-300{
-	--tw-border-opacity: 1;
-	border-color: rgba(179, 179, 179, var(--tw-border-opacity));
-}
-.border-primary{
-	--tw-border-opacity: 1;
-	border-color: rgba(29, 29, 29, var(--tw-border-opacity));
-}
-.bg-white{
+.bg-primary-800{
 	--tw-bg-opacity: 1;
-	background-color: rgba(230, 230, 230, var(--tw-bg-opacity));
+	background-color: rgba(51, 51, 51, var(--tw-bg-opacity));
 }
 .bg-background{
 	--tw-bg-opacity: 1;
@@ -1056,29 +932,22 @@ blockquote{
 	--tw-bg-opacity: 1;
 	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
-.bg-primary-800{
+.bg-white{
 	--tw-bg-opacity: 1;
-	background-color: rgba(51, 51, 51, var(--tw-bg-opacity));
+	background-color: rgba(230, 230, 230, var(--tw-bg-opacity));
 }
 .bg-opacity-70{
 	--tw-bg-opacity: 0.7;
-}
-.bg-bottom{
-	background-position: bottom;
 }
 .object-center{
 	-o-object-position: center;
 	   object-position: center;
 }
-.p-6{
-	padding: 1.5rem;
-}
 .p-3{
 	padding: 0.75rem;
 }
-.py-6{
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+.p-6{
+	padding: 1.5rem;
 }
 .py-12{
 	padding-top: 3rem;
@@ -1087,6 +956,10 @@ blockquote{
 .px-6{
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+}
+.py-16{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 .py-5{
 	padding-top: 1.25rem;
@@ -1100,8 +973,8 @@ blockquote{
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
-.pt-10{
-	padding-top: 2.5rem;
+.text-left{
+	text-align: left;
 }
 .text-center{
 	text-align: center;
@@ -1122,18 +995,6 @@ blockquote{
 	font-size: 0.875rem;
 	line-height: 1.25rem;
 }
-.text-3xl{
-	font-size: 1.875rem;
-	line-height: 2.25rem;
-}
-.text-lg{
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-}
-.text-xl{
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-}
 .font-medium{
 	font-weight: 500;
 }
@@ -1145,9 +1006,6 @@ blockquote{
 }
 .leading-snug{
 	line-height: 1.375;
-}
-.leading-tight{
-	line-height: 1.25;
 }
 .text-gray-800{
 	--tw-text-opacity: 1;
@@ -1161,13 +1019,12 @@ blockquote{
 	--tw-text-opacity: 1;
 	color: rgba(230, 230, 230, var(--tw-text-opacity));
 }
-.text-primary{
+.text-\[\#ff6a86\]{
 	--tw-text-opacity: 1;
-	color: rgba(29, 29, 29, var(--tw-text-opacity));
+	color: rgba(255, 106, 134, var(--tw-text-opacity));
 }
-.text-gray-200{
-	--tw-text-opacity: 1;
-	color: rgba(204, 204, 204, var(--tw-text-opacity));
+.opacity-60{
+	opacity: 0.6;
 }
 .opacity-40{
 	opacity: 0.4;
@@ -1189,9 +1046,6 @@ blockquote{
 .backdrop-filter{
 	-webkit-backdrop-filter: var(--tw-backdrop-filter);
 	        backdrop-filter: var(--tw-backdrop-filter);
-}
-.transition-none{
-	transition-property: none;
 }
 .transition-all{
 	transition-property: all;
@@ -1293,17 +1147,18 @@ html {
 	--tw-bg-opacity: 1;
 	background-color: rgba(29, 29, 29, var(--tw-bg-opacity));
 }
-.hover\:text-primary:hover{
-	--tw-text-opacity: 1;
-	color: rgba(29, 29, 29, var(--tw-text-opacity));
-}
 .hover\:text-white:hover{
 	--tw-text-opacity: 1;
 	color: rgba(230, 230, 230, var(--tw-text-opacity));
 }
 @media (min-width: 640px){
-	.sm\:p-6{
-		padding: 1.5rem;
+	.sm\:flex{
+		display: flex;
+	}
+	.sm\:space-y-0 > :not([hidden]) ~ :not([hidden]){
+		--tw-space-y-reverse: 0;
+		margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+		margin-bottom: calc(0px * var(--tw-space-y-reverse));
 	}
 }
 @media (min-width: 768px){
@@ -1313,59 +1168,15 @@ html {
 	.md\:mb-3{
 		margin-bottom: 0.75rem;
 	}
-	.md\:mb-0{
-		margin-bottom: 0px;
-	}
-	.md\:w-2\/3{
-		width: 66.666667%;
-	}
-	.md\:w-auto{
-		width: auto;
-	}
 	.md\:grid-cols-3{
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 	.md\:gap-6{
 		gap: 1.5rem;
 	}
-	.md\:p-0{
-		padding: 0px;
-	}
-	.md\:py-32{
-		padding-top: 8rem;
-		padding-bottom: 8rem;
-	}
-	.md\:py-12{
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-	}
-	.md\:py-16{
-		padding-top: 4rem;
-		padding-bottom: 4rem;
-	}
 	.md\:text-3xl{
 		font-size: 1.875rem;
 		line-height: 2.25rem;
-	}
-	.md\:text-2xl{
-		font-size: 1.5rem;
-		line-height: 2rem;
-	}
-}
-@media (min-width: 1024px){
-	.lg\:mx-6{
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
-	}
-	.lg\:flex{
-		display: flex;
-	}
-	.lg\:py-16{
-		padding-top: 4rem;
-		padding-bottom: 4rem;
-	}
-	.lg\:pb-32{
-		padding-bottom: 8rem;
 	}
 }
 @media (min-width: 1280px){

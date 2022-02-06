@@ -29,11 +29,8 @@ module.exports = (config) => {
 
     config.addLayoutAlias('default', 'layouts/default.njk');
     config.addLayoutAlias('paint', 'layouts/paint.njk');
-    config.addLayoutAlias('homepage', 'layouts/homepage.njk');
 
-    config.addFilter('readableDate', require('./lib/filters/readableDate'));
     config.addFilter('minifyJs', require('./lib/filters/minifyJs'));
-    config.addFilter("sortByOrder", sortByOrder);
 
     // minify html output
     config.addTransform('minifyHtml', require('./lib/transforms/minifyHtml'));
@@ -42,17 +39,6 @@ module.exports = (config) => {
     config.addNunjucksAsyncShortcode("image", imageShortcode);
     config.addLiquidShortcode("image", imageShortcode);
     config.addJavaScriptFunction("image", imageShortcode);
-
-    /* FILTER : Limit for post grid */
-    config.addFilter("limit", function (array, limit) {
-        return array.slice(0, limit);
-    });
-
-    /* FILTER : Sort by order (in front matter parameter) */
-    function sortByOrder(values) {
-        let vals = [...values];     // this *seems* to prevent collection mutation...
-        return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
-    }
 
     /* Slugify (safe url) */
     config.addFilter("slug", (input) => {
@@ -118,8 +104,3 @@ async function imageShortcode(src, alt, className, sizes = "(min-width: 640px) 5
         decoding="async">
     </picture>`;
 }
-
-// Shortcode for button "Prendre RDV"
-// module.exports = function ({className}) {
-//     return `<button class="button">${this.user(className)}</button>`;
-// };

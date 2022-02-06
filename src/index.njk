@@ -1,16 +1,12 @@
 ---
-layout: homepage
+layout: default
 ---
-<div class="flex bg-bottom">
-    <div class="w-full max-w-2xl w-full mx-auto p-6 lg:py-16 xl:px-0">
-        <h1 class="h2 text-4xl md:text-3xl text-white mb-4 font-bold">Bienvenue !</h1>
-        <p>Pour me contacter : <a href="mailto:leguian@gmail.com">leguian@gmail.com</a>.</p>
-    </div>
-</div>
-<div class="max-w-2xl mx-auto p-6 lg:pb-32 xl:px-0 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 object-center transition-none">
+<h1 class="h2 text-4xl md:text-3xl text-white mb-4 font-bold">Bienvenue !</h1>
+<p>Pour me contacter : <a href="mailto:leguian@gmail.com">leguian@gmail.com</a>.</p>
+<div class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 object-center">
     {% for item in paints %}
         <a href="paint/{{ item.title | slug }}" class="mix w-full rounded overflow-hidden bg-primary-800 shadow-xl flex flex-col justify-center items-center hover:scale-110 {{ item.title | slug }}">
-            <div class="min-w-[2rem]">{% image "src/assets/img/paints/"+item.title+".jpg", "Statistique de mes oeuvre sur "+item.title %}</div>
+            {% image "src/assets/img/paints/"+item.title+".jpg", "Statistique de mes oeuvre sur "+item.title %}
             <h2 class="text-sm text-white m-0 p-3 uppercase">{{ item.title | slug }}</h2>
         </a>
     {% endfor %}

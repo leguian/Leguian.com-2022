@@ -42,16 +42,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicons/favicon-16x16.png' | url }}">
     <link rel="manifest" href="{{ '/assets/img/favicons/site.webmanifest' | url }}">
     <link rel="mask-icon" href="{{ '/assets/img/favicons/safari-pinned-tab.svg' | url }}" color="#5bbad5">
-    <link rel="preload" href="{{ '/assets/fonts/CenturyGothic-Bold.woff' | url }}" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="{{ '/assets/fonts/CenturyGothic-Bold.ttf' | url }}" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="{{ '/assets/fonts/CenturyGothic-Bold.woff' | url }}" as="font" type="font/woff" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171419425-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15228256-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -60,7 +57,7 @@
         }
 
         gtag('js', new Date());
-        gtag('config', 'UA-171419425-1');
+        gtag('config', 'UA-15228256-2');
     </script>
 </head>
 
@@ -68,19 +65,9 @@
 
 {% include "partials/header.njk" %}
 <main class="w-full">
-    {% if layout === "specialites" %}
-        <article class="w-full">
-            {{ content | safe }}
-        </article>
-    {% elseif layout === "homepage" %}
+    <div class="max-w-2xl w-full max-w-2xl w-full mx-auto p-6 py-12 xl:px-0 text-center mx-auto">
         {{ content | safe }}
-    {% else %}
-        <div class="mx-6 lg:mx-6 py-6 md:py-32 flex-grow">
-            <div class="max-w-2xl mx-auto">
-                {{ content | safe }}
-            </div>
-        </div>
-    {% endif %}
+    </div>
 </main>
 {% include "partials/footer.njk" %}
 
