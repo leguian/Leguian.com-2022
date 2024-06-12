@@ -2,11 +2,10 @@
 layout: default
 ---
 
-<h1 class="text-4xl mb-6 text-center text-white">Titre : {{ paint.title }}</h1>
-<a href="{{ "../../assets/img/paints/"+paint.title+".jpg" | url }}" class="mx-auto block rounded overflow-hidden mb-6 max-w-[100%]">{% image "src/assets/img/paints/"+paint.title+".jpg", "Statistique de mes oeuvre sur "+paint.title %}</a>
-<div class="sm:flex space-y-6 sm:space-y-0 gap-4 justify-between text-left">
+<h1 class="text-4xl mb-6 text-left">Titre : {{ paint.title }}</h1>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6 text-left">
     <div>
-        <div class="opacity-60">Année de production</div>
+        <div class="opacity-60">Année</div>
         <strong>{{ paint.year }}</strong>
     </div>
     <div>
@@ -16,11 +15,13 @@ layout: default
         <div class="opacity-60">Prix (€)</div>
         <strong>{{ paint.price }}</strong></div>
     <div>
-        <div class="opacity-60">Disponible à la vente ?</div>
+        <div class="opacity-60">Disponible ?</div>
         {% if paint.availability == "TRUE" %}
             <strong>Oui</strong>
         {% else %}
             <strong class="text-[#ff6a86]">Non</strong>
         {% endif %}
-        </div>
+    </div>
 </div>
+
+<a href="{{ "../../assets/img/paints/"+paint.title+".jpg" | url }}" class="mx-auto block w-full">{% image "src/assets/img/paints/"+paint.title+".jpg", "Tableau contemporain "+paint.title %}</a>

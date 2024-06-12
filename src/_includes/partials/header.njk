@@ -1,7 +1,10 @@
-<header id="header" class="py-5 z-50 sticky w-full top-0 transition-all transform ease-in-out duration-500 bg-primary-800 bg-opacity-70 backdrop-filter backdrop-blur-xl backdrop-saturate-200 shadow-xl">
-    <div class="px-6 xl:px-0 max-w-2xl mx-auto flex items-center flex-wrap justify-center">
-        <a title="{{ site.title }}" href="{{ '/' | url }}">
-            {% include "src/assets/img/logo.svg" %}
-        </a>
+<header id="header" class="p-5 z-50 sticky w-full top-0 transition-all transform ease-in-out duration-500 bg-background bg-opacity-70 backdrop-filter backdrop-blur-xl backdrop-saturate-200 flex justify-between items-center">
+    <a title="{{ site.title }}" href="{{ '/' | url }}" class="w-72">
+      {% include "src/assets/img/logo.svg" %}
+    </a>
+    <div class="flex justify-center space-x-3 items-center uppercase text-lg font-bold">
+      <a href="/" class="">Mon travail</a>
+      <span>&middot;</span>
+      <a href="/insitu" class="">En situation</a>
     </div>
 </header>

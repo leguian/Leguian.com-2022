@@ -8,7 +8,7 @@ permalink: "/sitemap.xml"
     {% endfor %}
     {% for item in paints %}
         <url>
-            <loc>{{ site.url | url }}/paint/{{ item.title | slug }}/</loc>
+            <loc>{{ site.url | url }}/paint/{{ item.year }}-{{ item.title | slug }}/</loc>
             <priority>0.8</priority>
         </url>
     {% endfor %}

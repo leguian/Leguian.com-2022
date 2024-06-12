@@ -1,0 +1,12 @@
+---
+layout: default
+title: Images In Situ
+---
+<div class="space-y-4">
+  {% for image in insitu %}
+    <a href="{{ "../../assets/img/insitu/"+image | url }}" class="mx-auto block rounded overflow-hidden max-w-[100%] relative">
+      <div class="absolute bottom-0 bg-black/50 w-full text-xs text-white/80 px-2 py-1.5">Mise en situation fictive - les proportions sont approximatives</div>
+      {% image "src/assets/img/insitu/"+image, "Leguian Artiste Peintre "+paint.title %}
+    </a>
+  {% endfor %}
+</div>

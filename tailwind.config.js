@@ -17,13 +17,13 @@ module.exports = {
             },
             colors: {
                 'background': {
-                    DEFAULT: '#1d1d1d',
+                    DEFAULT: '#e6e6e6',
                 },
                 'black': {
                     DEFAULT: '#000000',
                 },
                 'white': {
-                    DEFAULT: '#e6e6e6',
+                    DEFAULT: '#ffffff',
                 },
                 "primary": {
                     DEFAULT: "#1d1d1d",

@@ -1,5 +1,8 @@
-<footer class="px-6 py-16 bg-black">
-    <div class="max-w-2xl mx-auto">
-        © {{ site.title }}
-    </div>
+<footer class="mt-16 text-left">
+  © {{ site.title }} - Pour me contacter : <a id="contact">envoyez-moi un email</a>.
 </footer>
+<script type="text/javascript">
+  var encEmail = "bGVndWlhbkBnbWFpbC5jb20=";
+  const form = document.getElementById("contact");
+  form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+</script>

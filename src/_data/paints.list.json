@@ -1,5 +1,21 @@
 [
   {
+    "year": "2024",
+    "title": "STNS02",
+    "size": "96×130",
+    "price": "2800",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
+    "year": "2024",
+    "title": "STNS01",
+    "size": "195×97",
+    "price": "3700",
+    "online": "TRUE",
+    "availability": "TRUE"
+  },
+  {
     "year": "2002",
     "title": "ST01",
     "size": "NC",
@@ -26,7 +42,7 @@
   {
     "year": "2002",
     "title": "ST04",
-    "size": "100x50",
+    "size": "100×50",
     "price": "750",
     "online": "TRUE",
     "availability": "FALSE"
@@ -34,7 +50,7 @@
   {
     "year": "2002",
     "title": "ST05",
-    "size": "73x60",
+    "size": "73×60",
     "price": "750",
     "online": "TRUE",
     "availability": "TRUE"
@@ -42,7 +58,7 @@
   {
     "year": "2008",
     "title": "ST06A06B",
-    "size": "100x50 & 50x50",
+    "size": "100×50 & 50×50",
     "price": "1000",
     "online": "TRUE",
     "availability": "TRUE"
@@ -50,7 +66,7 @@
   {
     "year": "2002",
     "title": "ST07",
-    "size": "81x100",
+    "size": "81×100",
     "price": "1100",
     "online": "TRUE",
     "availability": "TRUE"
@@ -58,7 +74,7 @@
   {
     "year": "2003",
     "title": "ST08",
-    "size": "89x116",
+    "size": "89×116",
     "price": "1200",
     "online": "TRUE",
     "availability": "TRUE"
@@ -66,7 +82,7 @@
   {
     "year": "2002",
     "title": "ST09",
-    "size": "50x50",
+    "size": "50×50",
     "price": "350",
     "online": "TRUE",
     "availability": "TRUE"
@@ -74,7 +90,7 @@
   {
     "year": "2003",
     "title": "ST10",
-    "size": "50x50",
+    "size": "50×50",
     "price": "350",
     "online": "TRUE",
     "availability": "TRUE"
@@ -82,7 +98,7 @@
   {
     "year": "2005",
     "title": "ST14",
-    "size": "100x100",
+    "size": "100×100",
     "price": "800",
     "online": "TRUE",
     "availability": "TRUE"
@@ -98,7 +114,7 @@
   {
     "year": "2006",
     "title": "ST25",
-    "size": "130x100",
+    "size": "130×100",
     "price": "1800",
     "online": "TRUE",
     "availability": "TRUE"
@@ -106,7 +122,7 @@
   {
     "year": "2006",
     "title": "ST26",
-    "size": "30x30",
+    "size": "30×30",
     "price": "270",
     "online": "TRUE",
     "availability": "FALSE"
@@ -114,7 +130,7 @@
   {
     "year": "2006",
     "title": "ST27",
-    "size": "30x30",
+    "size": "30×30",
     "price": "270",
     "online": "TRUE",
     "availability": "FALSE"
@@ -122,7 +138,7 @@
   {
     "year": "2006",
     "title": "ST28",
-    "size": "60x60",
+    "size": "60×60",
     "price": "550",
     "online": "TRUE",
     "availability": "TRUE"
@@ -130,7 +146,7 @@
   {
     "year": "2006",
     "title": "ST29",
-    "size": "60x60",
+    "size": "60×60",
     "price": "550",
     "online": "TRUE",
     "availability": "TRUE"
@@ -138,7 +154,7 @@
   {
     "year": "2006",
     "title": "ST30",
-    "size": "60x60",
+    "size": "60×60",
     "price": "550",
     "online": "TRUE",
     "availability": "TRUE"
@@ -146,7 +162,7 @@
   {
     "year": "2006",
     "title": "ST31",
-    "size": "100x50",
+    "size": "100×50",
     "price": "750",
     "online": "TRUE",
     "availability": "TRUE"
@@ -154,7 +170,7 @@
   {
     "year": "2006",
     "title": "ST32",
-    "size": "100x50",
+    "size": "100×50",
     "price": "750",
     "online": "TRUE",
     "availability": "TRUE"
@@ -162,7 +178,7 @@
   {
     "year": "2008",
     "title": "ST34",
-    "size": "92x75",
+    "size": "92×75",
     "price": "850",
     "online": "TRUE",
     "availability": "TRUE"
@@ -170,7 +186,7 @@
   {
     "year": "2006",
     "title": "ST35",
-    "size": "24x19",
+    "size": "24×19",
     "price": "250",
     "online": "TRUE",
     "availability": "FALSE"
@@ -178,7 +194,7 @@
   {
     "year": "2006",
     "title": "ST36",
-    "size": "24x19",
+    "size": "24×19",
     "price": "250",
     "online": "TRUE",
     "availability": "FALSE"
@@ -186,7 +202,7 @@
   {
     "year": "2006",
     "title": "ST37",
-    "size": "24x19",
+    "size": "24×19",
     "price": "250",
     "online": "TRUE",
     "availability": "FALSE"
@@ -194,7 +210,7 @@
   {
     "year": "1998",
     "title": "HS01",
-    "size": "89x146",
+    "size": "89×146",
     "price": "2000",
     "online": "TRUE",
     "availability": "TRUE"
@@ -202,7 +218,7 @@
   {
     "year": "1998",
     "title": "HS02",
-    "size": "50x40",
+    "size": "50×40",
     "price": "250",
     "online": "TRUE",
     "availability": "TRUE"
@@ -210,7 +226,7 @@
   {
     "year": "2004",
     "title": "PP",
-    "size": "65x54",
+    "size": "65×54",
     "price": "NC",
     "online": "TRUE",
     "availability": "FALSE"
@@ -218,7 +234,7 @@
   {
     "year": "2004",
     "title": "PRA",
-    "size": "40x40",
+    "size": "40×40",
     "price": "NC",
     "online": "TRUE",
     "availability": "FALSE"
@@ -226,7 +242,7 @@
   {
     "year": "2004",
     "title": "PRB",
-    "size": "40x40",
+    "size": "40×40",
     "price": "NC",
     "online": "TRUE",
     "availability": "FALSE"

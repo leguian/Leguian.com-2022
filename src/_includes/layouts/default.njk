@@ -1,75 +1,73 @@
 {%- set metaTitle -%}
-    {%- if not title -%}{{ site.title }} - {{ site.description | safe }}
-    {%- else -%}{{ title | safe }} | {{ site.title }}
-    {%- endif -%}
+  {%- if not title -%}{{ site.title }} - {{ site.description | safe }}
+  {%- else -%}{{ title | safe }} | {{ site.title }}
+  {%- endif -%}
 {%- endset -%}
 {%- set metaDesc -%}
-    {%- if not description -%}{{ site.description | safe }}
-    {%- else -%}{{ description | safe }}
-    {%- endif -%}
+  {%- if not description -%}{{ site.description | safe }}
+  {%- else -%}{{ description | safe }}
+  {%- endif -%}
 {%- endset -%}
 {%- set metaKeywords -%}
-    {%- if tags -%}
-        {%- for tag in tags -%}{{ tag }},{%- endfor -%}
-    {%- endif -%}
-    {%- if site.keywords -%}
-        {%- for keyword in site.keywords -%}
-            {{ keyword }}
-            {%- if not loop.last %},{% endif -%}
-        {%- endfor -%}
-    {%- endif -%}
+  {%- if tags -%}
+    {%- for tag in tags -%}{{ tag }},{%- endfor -%}
+  {%- endif -%}
+  {%- if site.keywords -%}
+    {%- for keyword in site.keywords -%}
+      {{ keyword }}
+      {%- if not loop.last %},{% endif -%}
+    {%- endfor -%}
+  {%- endif -%}
 {%- endset -%}
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ metaTitle }}</title>
-    <meta name="title" content="{{ metaTitle }}">
-    <meta name="description" content="{{ metaDesc }}">
-    <meta name="keywords" content="{{ metaKeywords }}">
-    <meta name="author" content="{{ author.name }}">
-    <meta name="robots" content="index, follow">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="canonical" href="{{ site.url | url }}{{ page.url }}">
-    <link rel="shortcut icon" href="{{ '/assets/img/favicons/favicon.png' | url }}"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/favicons/apple-touch-icon.png' | url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicons/favicon-32x32.png' | url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicons/favicon-16x16.png' | url }}">
-    <link rel="manifest" href="{{ '/assets/img/favicons/site.webmanifest' | url }}">
-    <link rel="mask-icon" href="{{ '/assets/img/favicons/safari-pinned-tab.svg' | url }}" color="#5bbad5">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15228256-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ metaTitle }}</title>
+  <meta name="title" content="{{ metaTitle }}">
+  <meta name="description" content="{{ metaDesc }}">
+  <meta name="keywords" content="{{ metaKeywords }}">
+  <meta name="author" content="{{ author.name }}">
+  <meta name="robots" content="index, follow">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="{{ site.url | url }}{{ page.url }}">
+  <link rel="shortcut icon" href="{{ '/assets/img/favicons/favicon.png' | url }}"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/favicons/apple-touch-icon.png' | url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicons/favicon-32x32.png' | url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicons/favicon-16x16.png' | url }}">
+  <link rel="manifest" href="{{ '/assets/img/favicons/site.webmanifest' | url }}">
+  <link rel="mask-icon" href="{{ '/assets/img/favicons/safari-pinned-tab.svg' | url }}" color="#5bbad5">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15228256-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-        gtag('js', new Date());
-        gtag('config', 'UA-15228256-2');
-    </script>
+    gtag('js', new Date());
+    gtag('config', 'UA-15228256-2');
+  </script>
 </head>
 
-<body class="flex flex-col text-white bg-background break-words">
+<body class="flex flex-col text-gray-700 bg-background break-words">
 
 {% include "partials/header.njk" %}
-<main class="w-full">
-    <div class="max-w-2xl w-full max-w-2xl w-full mx-auto p-6 py-12 xl:px-0 text-center mx-auto">
-        {{ content | safe }}
-    </div>
+<main class="w-full p-6 text-center">
+  {{ content | safe }}
+  {% include "partials/footer.njk" %}
 </main>
-{% include "partials/footer.njk" %}
 
 <script src="{{ '/assets/js/bundle.js' | url }}"></script>
 
